@@ -2,8 +2,8 @@
     background-image: url(Rectangle\ 1.png);
     position: absolute;
     background-repeat: no-repeat;
-
-    width: 1440px;
+    width: 100%;
+    background-size: 100%;
     height: 754px;
     left: 0px;
     top: 0px;
@@ -79,14 +79,14 @@ nav ul li {
     background: orangered;
     color: white;
     border-radius: 3px;
-    float: right;
-    align-items: flex-end;
+    /* float: right; */
+    /* align-items: flex-end; */
     border: 0px;
-    /* position: absolute; */
+    position: absolute;
     width: 136px;
     height: 61px;
-    left: 482px;
-    top: 539px;
+    left: 484px;
+    top: 535px;
     margin-top: 5px;
     margin-right: 5px;
     background: #F84646;
@@ -127,12 +127,13 @@ h3 {
     color: #000000;
 }
 
-.search-bar {
+.search{
     position: absolute;
     width: 502px;
     height: 73px;
     left: 122px;
     top: 533px;
+    border: none;
 
     background: #FFFFFF;
     border-radius: 8px;
@@ -189,3 +190,104 @@ h3 {
     mix-blend-mode: lighten;
 } */
 
+.middle
+{
+    position: absolute;
+    top: 1209px;
+    left: 356px;
+}
+
+.grid-container
+{
+    border: none;
+    width: 300%;
+    margin-left: 100px;
+    height: 200px;
+
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: space-between;
+
+}
+
+.grid-container2
+{
+    position: absolute;
+    top: 1800px;
+    width: 100%;
+    height: 200px;
+    background-color: orangered;
+}
+.grid-item2
+{
+    position: absolute;
+}
+#f1
+{
+    top: 1600px;
+    position: relative;
+    justify-content: center;
+
+}
+#f2
+{
+    top: 1500px;
+    position: relative;
+    justify-content: center;
+}
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    /* width: 200px;
+    margin: 0 auto; */
+  }
+
+  .grid{
+    border: 2px solid black;
+    margin: auto;
+    width: 75%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: space-evenly;
+
+}
+.grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    width: 450px;
+    height: 400px;
+    margin: 0 auto;
+}
+.card{
+    border: 2px solid red;
+    width: 100px;
+    margin: auto;
+}
+.title{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+.description{
+    margin: auto;
+    margin-top: 5px;
+    width: 78px;
+    text-align: center;
+}
+.logo{
+    margin: auto;
+    margin-top: 3px;
+    width: 40px;
+    height: 40px;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+}
